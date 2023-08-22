@@ -1,0 +1,109 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, nav, section, footer {
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    background-color: #eee;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 250px;
+    padding: 0 40px;
+}
+
+.filter-buttons {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.filter-buttons a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+}
+
+.login-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-left: auto;
+}
+
+.user-greeting {
+    margin-right: 40px;
+}
+
+.logout-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.active {
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #333;
+}
+
+.price:before {
+    content: "£";
+}
+
+
+.furniture-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -10px;
+}
+
+.furniture-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+
+.buy-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}

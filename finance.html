@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME Furniture - Buy Item</title>
+    <link rel="stylesheet" type="text/css" href="css/finance-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Buy Item</h1><br/>
+        <a href="index.html" class="back-link">Back to Furniture</a>
+    </header>
+    <main>
+        <section class="buy-section">
+            <h2>Item Information</h2>
+            <p>Item: <span id="item-name"></span></p>
+            <p>Price: £<span id="item-price"></span></p>
+        </section>
+        <section class="payment-section">
+            <h2>Choose Payment Option</h2>
+            <label>
+                <input type="radio" name="payment-option" value="full-payment" checked>
+                Full Payment
+            </label>
+            <label>
+                <input type="radio" name="payment-option" value="finance">
+                Finance
+            </label>
+            <div id="full-payment">
+                <form id="payment-form">
+                    <input type="text" id="card-number" placeholder="Card Number">
+                    <input type="text" id="card-expiry" placeholder="MM/YY">
+                    <input type="text" id="card-cvc" placeholder="CVC">
+                    <button type="submit" id="submit-payment">Pay Now</button>
+                </form>
+            </div>
+            <div id="finance-form">
+                <p>Upload documents for verification:</p>
+                <input type="file" id="document-upload" accept=".pdf, .jpg, .png" multiple>
+                <button id="submit-finance">Submit</button>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ACME Furniture</p>
+    </footer>
+    <script src="scripts/finance-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME Furniture - Browse Furniture</title>
+    <link rel="stylesheet" type="text/css" href="css/furniture-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to ACME Furniture</h1>
+    </header>
+    <nav>
+        <div class="nav-container">
+            <div class="filter-buttons">
+                <a href="#" data-category="all" class="active">All</a>
+                <a href="#" data-category="living-room">Living Room</a>
+                <a href="#" data-category="bedroom">Bedroom</a>
+                <a href="#" data-category="dining-room">Dining Room</a>
+            </div>
+            <span id="user-greeting" class="user-greeting"></span>
+            <button id="logout-button" class="logout-button">Logout</button>
+            <a href="login.html" class="login-button">Login</a>
+        </div>
+    </nav>
+    
+    
+    <section class="furniture-list">
+        <div class="furniture-item" data-category="living-room">
+            <h2>Cozy Lounge Chair</h2>
+            <p>A comfortable lounge chair for your living room.</p>
+            <p class="price">199.99</p>
+            <button class="buy-button" data-item="Cozy Lounge Chair">Buy Now</button>
+        </div>
+        <div class="furniture-item" data-category="living-room">
+            <h2>Modern Coffee Table</h2>
+            <p>A sleek coffee table to complement your decor.</p>
+            <p class="price">299.99</p>
+            <button class="buy-button" data-item="Modern Coffee Table">Buy Now</button>
+        </div>
+
+        <div class="furniture-item" data-category="bedroom">
+            <h2>Platform Bed</h2>
+            <p>Stylish platform bed for your bedroom.</p>
+            <p class="price">249.99</p>
+            <button class="buy-button" data-item="Platform Bed">Buy Now</button>
+        </div>
+        <div class="furniture-item" data-category="bedroom">
+            <h2>Wardrobe with Mirror</h2>
+            <p>Spacious wardrobe with an attached mirror.</p>
+            <p class="price">99.99</p>
+            <button class="buy-button" data-item="Wardrobe with Mirror">Buy Now</button>
+        </div>
+
+        <div class="furniture-item" data-category="dining-room">
+            <h2>Classic Dining Table</h2>
+            <p>Elegant dining table for family gatherings.</p>
+            <p class="price">149.99</p>
+            <button class="buy-button" data-item="Classic Dining Table">Buy Now</button>
+        </div>
+        <div class="furniture-item" data-category="dining-room">
+            <h2>Upholstered Dining Chairs</h2>
+            <p>Comfortable chairs to complement your dining table.</p>
+            <p class="price">79.99</p>
+            <button class="buy-button" data-item="Upholstered Dining Chairs">Buy Now</button>
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; 2023 ACME Furniture</p>
+    </footer>
+    <script src="scripts/furniture-script.js"></script>
+</body>
+</html>

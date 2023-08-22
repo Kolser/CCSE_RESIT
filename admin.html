@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME Furniture - Administration</title>
+    <link rel="stylesheet" type="text/css" href="/css/admin-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Administration Dashboard</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" data-section="inventory">Inventory</a></li>
+            <li><a href="#" data-section="sales">Furniture Items Sold</a></li>
+            <li><a href="#" data-section="finance">Customer Finance Applications</a></li>
+        </ul>
+    </nav>    
+    <main>
+        <section id="inventory" class="active-section">
+            <h2>Furniture Inventory</h2><br/>
+            <ul id="inventory-list"></ul>
+        </section>        
+        <section id="sales">
+            <h2>Furniture Items Sold</h2><br/>
+            <ul id="sales-list"></ul>
+        </section>
+        <section id="finance">
+            <h2>Customer Finance Applications</h2><br/>
+            <ul id="finance-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ACME Furniture</p>
+    </footer>
+    <script src="scripts/admin-script.js"></script>
+</body>
+</html>
