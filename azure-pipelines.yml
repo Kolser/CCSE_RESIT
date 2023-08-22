@@ -1,0 +1,26 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+jobs:
+- job: DeployToGitHubPages
+  steps:
+  - checkout: self
+
+  - script: |
+      git config --global user.email "wdkolser@gmail.com"
+      git config --global user.name "Kolser"
+      git checkout gh-pages
+      cp -R ./* ../ghpages/
+      cd ../ghpages
+      git add .
+      git commit -m "Deploy website"
+      git push origin gh-pages
+    displayName: 'Deploy to GitHub Pages'
+    env:
+      GIT_TERMINAL_PROMPT: 1
+      GIT_SSH_COMMAND: "ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
+      GIT_ASKPASS: "/usr/libexec/openssh/gnome-ssh-askpass"
+      GIT_SSH: "ssh"
